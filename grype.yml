@@ -1,2 +1,3 @@
 ignore:
   - vulnerability: CVE-2016-1000027
+  - vulnerability: GHSA-36p3-wjmg-h94x

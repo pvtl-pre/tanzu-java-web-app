@@ -1,4 +1,2 @@
 ignore:
   - vulnerability: CVE-2016-1000027
-  - vulnerability: CVE-2022-22965
-  - vulnerability: CVE-2022-42003

@@ -3,6 +3,9 @@ LOCAL_PATH = os.getenv("LOCAL_PATH", default='.')
 NAMESPACE = os.getenv("NAMESPACE", default='default')
 OUTPUT_TO_NULL_COMMAND = os.getenv("OUTPUT_TO_NULL_COMMAND", default=' > /dev/null ')
 
+# allow all remote clusters (https://docs.tilt.dev/choosing_clusters.html#remote)
+allow_k8s_contexts(k8s_context())
+
 k8s_custom_deploy(
     'tanzu-java-web-app',
     apply_cmd="tanzu apps workload apply -f config/workload.yaml --debug --live-update" +
